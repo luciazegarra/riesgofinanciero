@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-from sklearn.preprocessing import LabelEncodera
+from sklearn.preprocessing import LabelEncoder
 from metrics import classification_report, confusion_matrix
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -39,6 +39,8 @@ ds = cargar_datos()
 # Mostrar los primeros datos (cino primeros datos)
 
 st.write("Vista previa de los datos")
+st.dataframe(ds.head())
+
 
 
 
